@@ -3,9 +3,7 @@ import ProjectCard from "./ProjectCard.vue";
 </script>
 <template>
   <!-- Project showcase -->
-  <div
-    class="container grid grid-cols-[repeat(auto-fill,_minmax(300px,0px))] gap-4 justify-center mx-auto"
-  >
+  <div class="container grid grid-cols-[repeat(auto-fill,_minmax(300px,0px))] gap-4 justify-center mx-auto">
     <ProjectCard v-for="project in projects" :source="project.source" />
   </div>
 </template>
