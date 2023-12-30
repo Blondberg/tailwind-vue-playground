@@ -5,7 +5,7 @@
         <div class="p-10 text-4xl text-white font-inconsolata">Projects</div>
     </header>
     <main class="">
-        <div class="gap-4 mx-10 columns-2 md:columns-3">
+        <div class="gap-4 mx-10 transition-all duration-500 columns-2">
             <ScrollTransitionElement v-for="(project, index) in projects" :key="index">
                 <ImageItem :source="project.source" :title="project.title" :tags="project.tags" />
             </ScrollTransitionElement>
@@ -35,7 +35,7 @@ export default {
                     title: "MCTS for connect4",
                     tags: ["AI", "MCTS", "Python"],
                     source:
-                        "https://images.unsplash.com/photo-1681773321684-0f897aace764?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+                        "https://images.unsplash.com/photo-1495592822108-9e6261896da8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 },
                 {
                     title: "Discord Music Bot",
@@ -48,11 +48,7 @@ export default {
                     source:
                         "https://images.unsplash.com/photo-1493612276216-ee3925520721?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 },
-                {
-                    title: "Project 3",
-                    source:
-                        "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                },
+
                 {
                     title: "Project 3",
                     source:
@@ -78,13 +74,3 @@ export default {
     },
 };
 </script>
-
-<style>
-.demo {
-    max-width: 600px;
-    border: 2px solid #2c3e50;
-    padding: 2rem;
-    margin: 2rem auto;
-    background-color: #42b983;
-}
-</style>
