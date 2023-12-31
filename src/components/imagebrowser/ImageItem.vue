@@ -32,7 +32,7 @@ export default {
     </div>
 </template>
 
-
+<!--
 <style scoped>
 .item-container::before,
 .item-container::after {
@@ -94,4 +94,4 @@ export default {
     right: 0;
     bottom: 0;
 }
-</style>
+</style> -->

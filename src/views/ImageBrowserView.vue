@@ -4,8 +4,8 @@
     <header>
         <div class="p-10 text-4xl text-white font-inconsolata">Projects</div>
     </header>
-    <main class="">
-        <div class="gap-4 mx-10 transition-all duration-500 columns-2">
+    <main>
+        <div class="gap-2 transition-all duration-500 columns-2 md:columns-3">
             <ScrollTransitionElement v-for="(project, index) in projects" :key="index">
                 <ImageItem :source="project.source" :title="project.title" :tags="project.tags" />
             </ScrollTransitionElement>

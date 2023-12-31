@@ -38,7 +38,7 @@ import ImageBrowserView from "./ImageBrowserView.vue";
 
     </div>
   </div>
-  <ImageBrowserView ref="projects" />
+  <ImageBrowserView id="projects" ref="projects" />
 </template>
 
 <script lang="ts">
