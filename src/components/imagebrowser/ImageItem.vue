@@ -1,35 +1,42 @@
 <script lang="ts">
 export default {
-    props: {
-        source: String,
-        title: String,
-        tags: Array
-    },
+  props: {
+    source: String,
+    title: String,
+    tags: Array,
+  },
 };
 </script>
 
 
 <template>
+  <div
+    class="relative z-20 flex flex-col p-2 mb-4 transition-all duration-300 border-white objelast:ct-cover item-container group hover:-translate-y-2"
+  >
+    <span></span>
     <div
-        class="relative z-20 flex flex-col p-2 mb-4 transition-all duration-300 border-white objelast:ct-cover item-container group hover:-translate-y-2">
-        <span></span>
-        <div
-            class="relative z-10 flex flex-col w-full h-auto px-3 py-1 bg-white drop-shadow info-text font-inconsolata whitespace-nowrap">
-            <div class="text-sm">
-                {{ title }}
-            </div>
-            <div class="uppercase">
-                <span class="text-[#393939] text-xs justify-self-end font-light mx-[2px]" v-for="tag in tags">#{{ tag
-                }}
-                </span>
-            </div>
-        </div>
-        <div class="w-full overflow-hidden">
-            <img draggable="false"
-                class="relative z-0 h-auto max-w-full transition-all duration-300 ease-in-out group-hover:scale-105"
-                :src="source" alt="" />
-        </div>
+      class="relative z-10 flex flex-col w-full h-auto px-3 py-1 bg-white drop-shadow info-text font-inconsolata whitespace-nowrap"
+    >
+      <div class="text-sm">
+        {{ title }}
+      </div>
+      <div class="uppercase">
+        <span
+          class="text-[#393939] text-xs justify-self-end font-light mx-[2px]"
+          v-for="tag in tags"
+          >#{{ tag }}
+        </span>
+      </div>
     </div>
+    <div class="w-full overflow-hidden">
+      <img
+        draggable="false"
+        class="relative z-0 h-auto max-w-full transition-all duration-300 ease-in-out group-hover:scale-105"
+        :src="source"
+        alt=""
+      />
+    </div>
+  </div>
 </template>
 
 <!--

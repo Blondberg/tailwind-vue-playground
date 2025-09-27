@@ -21,6 +21,11 @@ const router = createRouter({
       path: '/imagebrowser',
       name: "imagebrowser",
       component: () => import('../views/ImageBrowserView.vue')
+    },
+    {
+      path: '/test',
+      name: "test",
+      component: () => import('../views/TestView.vue')
     }
   ]
 })
